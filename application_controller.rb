@@ -15,5 +15,9 @@ class MyApp < Sinatra::Base
     @yourdrink = params[:drink]
     "Do you want a sip of #{@yourdrink}?"
   end 
+  
+  get '/drink_form' do 
+    erb: drink_form
+  end 
 end
 
