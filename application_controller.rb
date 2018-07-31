@@ -21,7 +21,7 @@ class MyApp < Sinatra::Base
   end 
   
   post '/drink'do
-    "my name is #{params[:name]}, and I love to drink #{params[:favorite_drink]}"
+    "my name is #{params[:name]}, and I love to drink #{params[:]}"
   end
 end
 
