@@ -20,6 +20,7 @@ class MyApp < Sinatra::Base
     erb: drink_form
   end 
   
-  post '/drink'
+  post '/drink'do
+    "my name is #{params[:name]}, and I love to drink #{params["
 end
 
