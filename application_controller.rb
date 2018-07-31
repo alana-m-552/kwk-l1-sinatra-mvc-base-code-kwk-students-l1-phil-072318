@@ -11,7 +11,7 @@ class MyApp < Sinatra::Base
    erb:index   
   end
   
-  get '/hello/:name' do #allows the name to be entered into the website
+  get '/hello/:drink' do #allows the name to be entered into the website
     @yourname = params [:name]
     "Hello #{@yourname}"
   end 
