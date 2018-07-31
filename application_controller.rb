@@ -11,6 +11,9 @@ class MyApp < Sinatra::Base
    erb:index   
   end
   
-  get ''
+  get '/hello/:name' do 
+    @yourname = params [:name]
+    "Hello #{@yourname}"
+  end 
 end
 
