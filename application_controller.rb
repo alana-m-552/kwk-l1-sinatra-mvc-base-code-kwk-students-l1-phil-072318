@@ -19,5 +19,7 @@ class MyApp < Sinatra::Base
   get '/drink_form' do 
     erb: drink_form
   end 
+  
+  post '/drink'
 end
 
