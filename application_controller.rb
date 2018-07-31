@@ -12,7 +12,7 @@ class MyApp < Sinatra::Base
   end
   
   get '/hello/:drink' do #allows the name to be entered into the website
-    @yourdrink = params [:drink]
+    @yourdrink = params[:drink]
     "Do you want a sip of #{@yourdrink}?"
   end 
 end
